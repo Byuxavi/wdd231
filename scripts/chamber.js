@@ -50,3 +50,51 @@ function setThemeBasedOnLocation() {
 
 // Aplicar tema basado en la ubicación
 setThemeBasedOnLocation();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const membersContainer = document.getElementById("members-container");
+    const toggleViewBtn = document.getElementById("toggle-view");
+
+    let isGridView = true;
+
+    // Función para obtener datos del JSON
+    async function fetchMembers() {
+        try {
+            const response = await fetch("data/members.json");
+            const members = await response.json();
+            displayMembers(members);
+        } catch (error) {
+            console.error("Error al cargar los miembros:", error);
+        }
+    }
+
+    // Función para mostrar miembros en la página
+    function displayMembers(members) {
+        membersContainer.innerHTML = ""; // Limpiar contenedor
+        members.forEach(member => {
+            const memberElement = document.createElement("div");
+            memberElement.classList.add("member-card", isGridView ? "grid" : "list");
+
+            memberElement.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visitar Sitio</a>
+                <span class="membership-level level-${member.membership}">Nivel ${member.membership}</span>
+            `;
+            membersContainer.appendChild(memberElement);
+        });
+    }
+
+    // Alternar entre vista de lista y cuadrícula
+    toggleViewBtn.addEventListener("click", () => {
+        isGridView = !isGridView;
+        membersContainer.classList.toggle("list-view");
+        fetchMembers();
+    });
+
+    // Cargar miembros al inicio
+    fetchMembers();
+});

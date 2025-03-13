@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Tech Solutions",
+      "address": "123 Main Street, Cityville",
+      "phone": "+1 (555) 123-4567",
+      "website": "https://www.techsolutions.com",
+      "image": "techsolutions.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Green Energy Co.",
+      "address": "456 Oak Avenue, Townsville",
+      "phone": "+1 (555) 234-5678",
+      "website": "https://www.greenenergy.com",
+      "image": "greenenergy.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Healthy Living Gym",
+      "address": "789 Wellness Rd, FitCity",
+      "phone": "+1 (555) 345-6789",
+      "website": "https://www.healthylivinggym.com",
+      "image": "healthyliving.jpg",
+      "membership": 1
+    },
+    {
+      "name": "Auto Fixers",
+      "address": "321 Mechanic St, AutoTown",
+      "phone": "+1 (555) 456-7890",
+      "website": "https://www.autofixers.com",
+      "image": "autofixers.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Delicious Bites Café",
+      "address": "654 Tasty Ave, FoodCity",
+      "phone": "+1 (555) 567-8901",
+      "website": "https://www.deliciousbites.com",
+      "image": "deliciousbites.jpg",
+      "membership": 1
+    },
+    {
+      "name": "SmartTech Gadgets",
+      "address": "987 Innovation Blvd, TechTown",
+      "phone": "+1 (555) 678-9012",
+      "website": "https://www.smarttechgadgets.com",
+      "image": "smarttech.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Home Comfort Services",
+      "address": "741 Cozy St, ComfortCity",
+      "phone": "+1 (555) 789-0123",
+      "website": "https://www.homecomfort.com",
+      "image": "homecomfort.jpg",
+      "membership": 2
+    }
+  ]

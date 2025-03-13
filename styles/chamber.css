@@ -232,3 +232,69 @@ nav ul li a:hover {
     width: 50px;
     height: 50px;
 }
+
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para las tarjetas de miembros */
+.member-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Vista de lista */
+#members-container.list-view {
+    display: block;
+}
+
+#members-container.list-view .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+#members-container.list-view .member-card img {
+    max-width: 80px;
+}
+
+/* Botón para alternar vistas */
+#toggle-view {
+    margin: 20px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#toggle-view:hover {
+    background: #0056b3;
+}
+
+/* Colores según nivel de membresía */
+.membership-level {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.level-1 { background: #ddd; color: #000; }  /* Miembro estándar */
+.level-2 { background: silver; color: #333; } /* Plata */
+.level-3 { background: gold; color: #000; } /* Oro */
