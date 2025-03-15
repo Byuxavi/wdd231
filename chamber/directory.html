@@ -1,124 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Timbuktu Chamber of Commerce is a resource center for local businesses, offering information on events, networking opportunities, and a business directory.">
-    <meta name="keywords" content="Timbuktu, chamber of commerce, local businesses, events, networking, economic development">
-    <title>Timbuktu Chamber of Commerce</title>
+    <title>Member Directory - Chamber of Commerce</title>
     <meta name="author" content="Javier Manosalva">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/chamber.css">
+    <meta name="description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses."/>
+    <meta property="og:title" content="Member Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/directory">
+    <meta property="og:image" content="https://yourwebsite.com/images/hero.jpg">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses."/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/chamber/styles/directory.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="/chamber/scripts/directory.js" defer></script>
+    <script src="/chamber/scripts/menu.js" defer></script>
 </head>
 <body>
-    <button id="toggle-view">Alternar Vista</button>
-<div id="members-container"></div>
-
     <header>
-        <div class="logo">
-            <div class="logo-img">📷</div>
-            <div class="logo-text">
-                <h1>Timbuktu</h1>
-                <p>Chamber of Commerce</p>
-            </div>
+        <button class="menu-btn" aria-label="Toggle menu button">☰</button>
+        <div class="logo-box">
+            <a href="index.html">
+                <img src="/images/commerce.jpg" alt="Chamber of Commerce Logo" class="logo">
+            </a>
         </div>
-        <nav>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="join-highlight">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><button class="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="hero">
-        <div class="hero-text">Scalable, responsive hero image</div>
-        <a href="#" class="keynote-btn">Keynote Tickets</a>
-    </section>
-
     <main>
-        <h2 class="page-title">Home</h2>
-        <div class="info-grid">
-            <div class="panel">
-                <div class="panel-header">Events</div>
-                <div class="panel-content" id="events-container">
-                    <!-- Eventos dinámicos -->
-                </div>
-            </div>
-            <section class="weather">
-                <h2>Current Weather</h2>
-                <img class="weather-icon" src="images/SunnyWeather.svg" alt="Sunny Weather">
-                <p><strong>75° F</strong> - Partly Cloudy</p>
-                <p><strong>High:</strong> 85°</p>
-                <p><strong>Low:</strong> 52°</p>
-                <p><strong>Humidity:</strong> 34%</p>
-                <p><strong>Sunrise:</strong> 7:30 AM</p>
-                <p><strong>Sunset:</strong> 9:59 PM</p>
-            </section>
-            <section class="forecast">
-                <h2>Weather Forecast</h2>
-                <p><strong>Today:</strong> 90° F</p>
-                <p><strong>Wednesday:</strong> 89° F</p>
-                <p><strong>Thursday:</strong> 68° F</p>
-            </section>
-        </div>
-
-        <div class="business-list">
-            <div class="card">
-                <h2>Business Name</h2>
-                <p>Business Tag Line</p>
-                <p><strong>Email:</strong> <a href="mailto:info@gmail.com">info@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:8005551234">800-555-1234</a></p>
-                <p><strong>Website:</strong> <a href="http://mybusiness.com">mybusiness.com</a></p>
-            </div>
-            <div class="card">
-                <h2>Business Name</h2>
-                <p>Business Tag Line</p>
-                <p><strong>Email:</strong> <a href="mailto:info@gmail.com">info@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:8005551234">800-555-1234</a></p>
-                <p><strong>Website:</strong> <a href="http://mybusiness.com">mybusiness.com</a></p>
-            </div>
-            <div class="card">
-                <h2>Business Name</h2>
-                <p>Business Tag Line</p>
-                <p><strong>Email:</strong> <a href="mailto:info@gmail.com">info@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:8005551234">800-555-1234</a></p>
-                <p><strong>Website:</strong> <a href="http://mybusiness.com">mybusiness.com</a></p>
-            </div>
-        </div>
+        <section class="intro-section">
+            <h1>Discover Our Member Directory</h1>
+            <p>Welcome to our Member Directory, where you'll find businesses that drive our community.</p>
+        </section>
+        <section class="views-button-section">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </section>
+        <section id="members-container"></section>
     </main>
-
     <footer>
-        <div class="footer-content">
-            <!-- Información de la empresa -->
-            <div class="footer-info">
-                <h3>Timbuktu Chamber of Commerce</h3>
-                <p>10 Rue De La Paix, Timbuktu, Mali 999</p>
-                <p>Email: <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a></p>
-                <p>Phone: <a href="tel:+2235552300">(223) 555-2300</a></p>
-            </div>
-    
-            <!-- Redes sociales -->
-            <div class="footer-social">
-                <a href="https://youtube.com"><img src="/images/youtube-svgrepo-com.svg" alt="YouTube"></a>
-                <a href="https://twitter.com"><img src="/images/Threads_(app)_logo.svg" alt="Twitter"></a>
-                <a href="https://linkedin.com"><img src="/images/LinkedIn_icon.svg" alt="LinkedIn"></a>
-            </div>
-    
-            <!-- Información extra -->
-            <div class="footer-extra">
-                <p>WDD231 Class Project</p>
-                <p>Javier Manosalva</p>
-                <p>&copy; 2024 Timbuktu Chamber of Commerce</p>
-                <p>Last Modification: <span id="last-modified"></span></p>
-            </div>
+        <div class="contact-box">
+            <p>Contact</p>
+            <address>
+                <a href="mailto:contact@chamberofcommerce.com">📧 contact@chamberofcommerce.com</a>
+                <a href="tel:+123456789">📞 +1 234 567 89</a>
+                <p>📍 123 Fictional Street, City, Country</p>
+            </address>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://youtube.com"><img src="/images/youtube-svgrepo-com.svg" alt="YouTube"></a>
+            <a href="https://twitter.com"><img src="/images/Threads_(app)_logo.svg" alt="Twitter"></a>
+            <a href="https://linkedin.com"><img src="/images/LinkedIn_icon.svg" alt="LinkedIn"></a>
+        </div>
+        <div class="copyright-box">
+            <p>&copy; <span id="year"></span> Javier Manosalva - Chamber of Commerce</p>
+            <p>Last modified: <span class="last-modify"></span></p>
         </div>
     </footer>
-
-    <script src="/scripts/chamber.js" defer></script>
 </body>
 </html>
