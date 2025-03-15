@@ -1,9 +1,9 @@
-/* Vista en cuadrícula */
+
 .grid-view .member-card {
     width: calc(33.333% - 20px);
 }
 
-/* Vista en lista */
+
 .list-view {
     flex-direction: column;
     width: 100%;
@@ -22,7 +22,7 @@
     margin-right: 15px;
 }
 
-/* Footer */
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ footer a:hover {
     margin-top: 10px;
 }
 
-/* Redes sociales en el footer */
+
 .footer-social {
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-/* Menú responsive */
+
 .menu-btn {
     display: none;
     font-size: 24px;

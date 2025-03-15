@@ -1,4 +1,4 @@
-/* Header fijo */
+
 header {
     position: fixed;
     top: 0;
@@ -62,7 +62,6 @@ button:hover {
     background-color: #a5632c;
 }
 
-/* Contenedor de miembros */
 #members-container {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +70,7 @@ button:hover {
     justify-content: center;
 }
 
-/* Tarjetas de miembro */
+
 .member-card {
     background: white;
     padding: 15px;
