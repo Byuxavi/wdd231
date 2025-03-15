@@ -1,0 +1,28 @@
+/* Normalización de estilos */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 70px;
+}
+
+/* Normalización de listas */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botón */
+button {
+    border: none;
+    cursor: pointer;
+}

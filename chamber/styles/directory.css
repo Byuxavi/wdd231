@@ -1,12 +1,3 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    padding-top: 70px;
-}
-
 /* Header fijo */
 header {
     position: fixed;
@@ -28,15 +19,12 @@ header {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     gap: 20px;
     margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
     font-weight: bold;
     padding: 10px 15px;
 }
@@ -64,11 +52,9 @@ nav ul li a:hover {
 
 button {
     background-color: #c37b34;
-    border: none;
     padding: 10px 20px;
     font-weight: bold;
     color: white;
-    cursor: pointer;
     border-radius: 5px;
 }
 
@@ -104,10 +90,6 @@ button:hover {
     border-radius: 50%;
 }
 
-.member-info {
-    text-align: left;
-}
-
 .member-info h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
@@ -123,142 +105,8 @@ button:hover {
     margin-top: 10px;
     color: #007bff;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .visit-link:hover {
     text-decoration: underline;
-}
-
-/* Vista en cuadrícula */
-.grid-view .member-card {
-    width: calc(33.333% - 20px);
-}
-
-/* Vista en lista */
-.list-view {
-    flex-direction: column;
-    width: 100%;
-}
-
-.list-view .member-card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-}
-
-.list-view .member-card img {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-}
-
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer div {
-    flex: 1;
-    min-width: 200px;
-    padding: 10px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    margin: 5px 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.copyright-box {
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-/* Redes sociales en el footer */
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.footer-social a img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-
-.footer-social a img:hover {
-    transform: scale(1.2);
-}
-
-/* Menú responsive */
-.menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .menu-btn {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 15px;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: #333;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .nav-menu ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .nav-menu ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
 }
