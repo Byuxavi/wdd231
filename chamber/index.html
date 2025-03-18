@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Timbuktu Chamber of Commerce is a resource center for local businesses, offering information on events, networking opportunities, and a business directory.">
-    <meta name="keywords" content="Timbuktu, chamber of commerce, local businesses, events, networking, economic development">
-    <title>Timbuktu Chamber of Commerce</title>
+    <title>Member Directory - Chamber of Commerce</title>
     <meta name="author" content="Javier Manosalva">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/chamber.css">
+    <meta name="description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+
+    <meta property="og:title" content="Member Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://byuxavi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://github.com/Byuxavi/wdd231/blob/main/chamber/images/commerce.jpg">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <div class="logo-img">📷</div>
-            <div class="logo-text">
-                <h1>Timbuktu</h1>
-                <p>Chamber of Commerce</p>
+            <div class="logo">
+                <img src="images/commerce.jpg" alt="Chamber Logo">
+                <h1>Chamber of Commerce</h1>
             </div>
         </div>
         <nav>
@@ -34,37 +46,38 @@
     </header>
 
     <section class="hero">
-        <div class="hero-text">Scalable, responsive hero image</div>
-        <a href="#" class="keynote-btn">Keynote Tickets</a>
+        <img src="images/hero.png" alt="Business Community" class="hero-img">
+        <div class="hero-text">
+            <h2>Grow Your Business with Us</h2>
+            <a href="join.html" class="cta-btn">Join Now</a>
+        </div>
     </section>
 
     <main>
         <h2 class="page-title">Home</h2>
-        <div class="info-grid">
-            <div class="panel">
-                <div class="panel-header">Events</div>
-                <div class="panel-content" id="events-container">
-                    <!-- Eventos dinámicos -->
-                </div>
-            </div>
-            <section class="weather">
-                <h2>Current Weather</h2>
-                <img class="weather-icon" src="/images/SunnyWeather.svg" alt="Sunny Weather">
-                <p><strong>75° F</strong> - Partly Cloudy</p>
-                <p><strong>High:</strong> 85°</p>
-                <p><strong>Low:</strong> 52°</p>
-                <p><strong>Humidity:</strong> 34%</p>
-                <p><strong>Sunrise:</strong> 7:30 AM</p>
-                <p><strong>Sunset:</strong> 9:59 PM</p>
-            </section>
-            <section class="forecast">
-                <h2>Weather Forecast</h2>
-                <p><strong>Today:</strong> 90° F</p>
-                <p><strong>Wednesday:</strong> 89° F</p>
-                <p><strong>Thursday:</strong> 68° F</p>
-            </section>
-        </div>
-        <div class="business-list" id="business-list"></div>
+        
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <img id="weather-icon" src="" alt="Weather icon">
+            <p><strong>Temperature:</strong> <span id="current-temp"></span>&deg;C</p>
+            <p><strong>Weather:</strong> <span id="weather-desc"></span></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </section>
+        
+        <section class="forecast">
+            <h2>3-Day Forecast</h2>
+            <div id="forecast-container"></div>
+        </section>
+        
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div id="events-container"></div>
+        </section>
+        
+        <section class="featured-members">
+            <h2>Featured Members</h2>
+            <div id="business-list"></div>
+        </section>
     </main>
 
     <footer>
@@ -93,7 +106,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="/chamber/scripts/menu.js" defer></script>
 </body>
 </html>
