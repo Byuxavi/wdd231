@@ -11,7 +11,7 @@ async function fetchWeather() {
         const data = await response.json();
         console.log("Datos del clima:", data); // 🔎 Para depuración
 
-        // Verifica si los elementos existen antes de modificarlos
+        
         const weatherIcon = document.getElementById("weather-icon");
         const tempElement = document.getElementById("current-temp");
         const weatherDesc = document.getElementById("weather-desc");
@@ -23,17 +23,17 @@ async function fetchWeather() {
             return;
         }
 
-        // Mostrar la información del clima
+        
         tempElement.textContent = `${Math.round(data.main.temp)}°C`;
         weatherDesc.textContent = data.weather[0].description;
         humidity.textContent = `${data.main.humidity}%`;
 
-        // Configurar la imagen del clima
+        
         const iconCode = data.weather[0].icon;
         weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         weatherIcon.alt = data.weather[0].description;
 
-        // Mostrar detalles adicionales en el pronóstico
+        
         forecastContainer.innerHTML = `
             <p><strong>🌡️ Máx:</strong> ${Math.round(data.main.temp_max)}°C</p>
             <p><strong>🌡️ Mín:</strong> ${Math.round(data.main.temp_min)}°C</p>
