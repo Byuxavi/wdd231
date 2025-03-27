@@ -4,226 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Chamber Membership</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --primary-hover: #1d4ed8;
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-500: #6b7280;
-            --gray-700: #374151;
-            --gray-900: #111827;
-            --success: #16a34a;
-            --success-bg: #dcfce7;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--gray-50);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 42rem;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        .thank-you-container {
-            background: white;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-            animation: slideUp 0.5s ease-out;
-        }
-
         @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 1.875rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            font-size: 1.125rem;
-            color: var(--gray-500);
-            margin-bottom: 2rem;
-        }
-
-        .details-grid {
-            background-color: var(--gray-50);
-            border: 1px solid var(--gray-100);
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-
-        @media (min-width: 640px) {
-            .details-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .details-grid .full-width {
-                grid-column: span 2;
-            }
-        }
-
-        .details-item dt {
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--gray-500);
-            margin-bottom: 0.25rem;
-        }
-
-        .details-item dd {
-            font-size: 0.875rem;
-            color: var(--gray-900);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .check-icon {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: var(--success-bg);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--success);
-            font-size: 1rem;
-            padding: 0.25rem;
-            opacity: 0;
-            transform: scale(0.5);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-        }
-
-        .check-icon.visible {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 0.375rem;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-
-        .back-btn:hover {
-            background-color: var(--primary-hover);
+        .thank-you-container {
+            animation: slideUp 0.5s ease-out;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="thank-you-container">
-            <h1 class="title text-center">Thank You!</h1>
-            <p class="subtitle text-center">Your membership application has been received.</p>
-            
-            <div class="details-grid">
-                <div class="details-item">
-                    <dt>Name</dt>
-                    <dd id="fullName"></dd>
+<body class="min-h-screen bg-gray-50">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="w-full max-w-2xl">
+            <div class="thank-you-container bg-white rounded-xl shadow-lg p-8 text-center">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-green-100 rounded-full p-3">
+                        <svg class="w-12 h-12 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
                 </div>
-                
-                <div class="details-item">
-                    <dt>Business</dt>
-                    <dd id="business"></dd>
-                </div>
-                
-                <div class="details-item">
-                    <dt>Email</dt>
-                    <dd id="email"></dd>
-                </div>
-                
-                <div class="details-item">
-                    <dt>Membership Level</dt>
-                    <dd id="membershipLevel"></dd>
-                </div>
-                
-                <div class="details-item full-width">
-                    <dt>Submitted</dt>
-                    <dd id="timestamp">
-                        <span>Loading...</span>
-                        <div class="check-icon" id="checkIcon">✔</div>
-                    </dd>
-                </div>
-            </div>
 
-            <div class="text-center">
-                <a href="index.html" class="back-btn">Return to Home</a>
+                <h1 class="text-3xl font-bold text-gray-900 mb-2">Thank You!</h1>
+                <p class="text-lg text-gray-500 mb-8">Your membership application has been received.</p>
+                
+                <div class="bg-gray-50 border border-gray-100 rounded-lg p-6 mb-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="text-left">
+                            <dt class="text-sm font-medium text-gray-500 mb-1">Name</dt>
+                            <dd id="fullName" class="text-sm text-gray-900">Loading...</dd>
+                        </div>
+                        
+                        <div class="text-left">
+                            <dt class="text-sm font-medium text-gray-500 mb-1">Business</dt>
+                            <dd id="business" class="text-sm text-gray-900">Loading...</dd>
+                        </div>
+                        
+                        <div class="text-left">
+                            <dt class="text-sm font-medium text-gray-500 mb-1">Email</dt>
+                            <dd id="email" class="text-sm text-gray-900">Loading...</dd>
+                        </div>
+                        
+                        <div class="text-left">
+                            <dt class="text-sm font-medium text-gray-500 mb-1">Membership Level</dt>
+                            <dd id="membershipLevel" class="text-sm text-gray-900">Loading...</dd>
+                        </div>
+                        
+                        <div class="text-left col-span-full">
+                            <dt class="text-sm font-medium text-gray-500 mb-1 flex items-center">
+                                Submitted
+                                <svg class="w-4 h-4 text-green-600 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </dt>
+                            <dd id="timestamp" class="text-sm text-gray-900">Loading...</dd>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+                    Return to Home
+                </a>
             </div>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Get URL parameters
             const params = new URLSearchParams(window.location.search);
-
-            const fields = {
-                fullName: `${params.get('first_name') || ''} ${params.get('last_name') || ''}`.trim() || 'N/A',
-                business: params.get('business') || 'N/A',
-                email: params.get('email') || 'N/A',
-                membershipLevel: (params.get('membership_level') || 'N/A').toUpperCase(),
-            };
-
-            Object.entries(fields).forEach(([id, value]) => {
-                const element = document.getElementById(id);
-                if (element) {
-                    element.textContent = value;
-                }
-            });
-
-            // Obtener la hora actual usando TimeZoneDB API
-            fetch('https://api.timezonedb.com/v2.1/get-time-zone?key=JWIPGV9JV134&format=json&by=ip')
-                .then(response => response.json())
-                .then(data => {
-                    const formattedDate = new Date(data.timestamp * 1000).toLocaleString();
-                    document.getElementById('timestamp').firstElementChild.textContent = formattedDate;
-
-                    // Mostrar el check animado
-                    document.getElementById('checkIcon').classList.add('visible');
-                })
-                .catch(error => {
-                    console.error('Error fetching time:', error);
-                    document.getElementById('timestamp').firstElementChild.textContent = 'Error loading time';
-                });
+            
+            // Set the values
+            const fullName = `${params.get('first_name') || ''} ${params.get('last_name') || ''}`.trim() || 'N/A';
+            const business = params.get('business') || 'N/A';
+            const email = params.get('email') || 'N/A';
+            const membershipLevel = (params.get('membership_level') || 'N/A').toUpperCase();
+            
+            // Update the DOM
+            document.getElementById('fullName').textContent = fullName;
+            document.getElementById('business').textContent = business;
+            document.getElementById('email').textContent = email;
+            document.getElementById('membershipLevel').textContent = membershipLevel;
+            
+            // Set current timestamp
+            const currentTime = new Date().toLocaleString();
+            document.getElementById('timestamp').textContent = currentTime;
         });
     </script>
 </body>
