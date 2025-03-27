@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavi Chamber of Commerce</title>
+    <meta name="author" content="Javier Manosalva">
+    <meta name="description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+
+    <meta property="og:title" content="Member Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://byuxavi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://github.com/Byuxavi/wdd231/blob/main/chamber/images/commerce.jpg">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+
+    <link rel="icon" href="images/commerce.jpg">
+
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo">
+                <img src="images/commerce.jpg" alt="Chamber Logo">
+                <h1>Chamber of Commerce</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="join-highlight">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/hero.png" alt="Business Community" class="hero-img">
+        <div class="hero-text">
+            <h2>Grow Your Business with Us</h2>
+            <a href="join.html" class="cta-btn">Join Now</a>
+        </div>
+    </section>
+
+    <main>
+        <h1>Explore Local Businesses with Xavi Chamber</h1>
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div id="events-container"></div>
+        </section>
+        
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <img id="weather-icon" src="images/SunnyWeather.svg" alt="Weather icon">
+            <p><strong>Temperature:</strong> <span id="current-temp"></span>&deg;C</p>
+            <p><strong>Weather:</strong> <span id="weather-desc"></span></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </section>
+        
+        <section class="forecast">
+            <h2>3-Day Forecast</h2>
+            <div id="forecast-container"></div>
+        </section>
+        
+        
+        <section class="featured-members">
+            <h2>Featured Members</h2>
+            <div id="business-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            
+            <div class="footer-info">
+                <h3>Xavi Chamber of Commerce</h3>
+                <p>10 Rue De La Paix, Bucaramanga, colombia 999</p>
+                <p>Email: <a href="mailto:info@timbuktucc.org">info@Xavi.org</a></p>
+                <p>Phone: <a href="tel:+2235552300">(223) 555-2300</a></p>
+            </div>
+    
+            
+            <div class="footer-social">
+                <a href="https://youtube.com"><img src="images/youtube-svgrepo-com.svg" alt="YouTube"></a>
+                <a href="https://twitter.com"><img src="images/threads-logo.svg" alt="Twitter"></a>
+                <a href="https://linkedin.com"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+            </div>
+    
+            
+            <div class="footer-extra">
+                <p>WDD231 Class Project</p>
+                <p>Javier Manosalva</p>
+                <p>&copy; 2024 Xavi Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

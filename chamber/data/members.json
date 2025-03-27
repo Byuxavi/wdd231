@@ -1,0 +1,58 @@
+[
+    {
+    "name": "Tech Solutions Ltd.",
+    "image": "images/TechSolutionsLtd.jpg",
+    "address": "123 Innovation Drive, Pretoria",
+    "phone": "(012) 345-6789",
+    "website": "https://techsolutions.com",
+    "membership": "Gold"
+    },
+    {
+    "name": "Green Earth Landscaping",
+    "image": "images/GreenEarthLandscaping.jpg",
+    "address": "456 Nature Way, Pretoria",
+    "phone": "(011) 987-6543",
+    "website": "https://greenearth.com",
+    "membership": "Silver"
+    },
+    {
+    "name": "Blue Ocean Marketing",
+    "image": "images/BlueOceanMarketing.jpg",
+    "address": "789 Strategy Blvd, Johannesburg",
+    "phone": "(010) 246-1357",
+    "website": "https://blueoceanmarketing.com",
+    "membership": "Bronze"
+    },
+    {
+    "name": "Sunrise Bakery",
+    "image": "images/SunriseBakery.jpg",
+    "address": "159 Dough St, Cape Town",
+    "phone": "(021) 789-1234",
+    "website": "https://sunrisebakery.com",
+    "membership": "Gold"
+    },
+    {
+    "name": "Fast Logistics",
+    "image": "images/FastLogistics.jpg",
+    "address": "852 Express Lane, Durban",
+    "phone": "(031) 456-7890",
+    "website": "https://fastlogistics.com",
+    "membership": "Silver"
+    },
+    {
+    "name": "Elite Fitness Gym",
+    "image": "images/EliteFitnessGym.jpg",
+    "address": "321 Workout Ave, Cape Town",
+    "phone": "(021) 654-3210",
+    "website": "https://elitefitness.com",
+    "membership": "Bronze"
+    },
+    {
+    "name": "Smart Tech Repairs",
+    "image": "images/SmartTechRepairs.jpg",
+    "address": "741 Fix It Blvd, Johannesburg",
+    "phone": "(010) 999-8888",
+    "website": "https://smarttechrepairs.com",
+    "membership": "Gold"
+    }
+]
