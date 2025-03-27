@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Chamber Membership</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         .thank-you-container {
             max-width: 600px;
@@ -93,32 +92,20 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const params = new URLSearchParams(window.location.search);
-            
+
+            const timestamp = params.get('timestamp');
+            const date = timestamp ? new Date(parseInt(timestamp)) : null;
+
             document.getElementById('fullName').textContent = 
-                `${params.get('first_name')} ${params.get('last_name')}`;
+                `${params.get('first_name') || ''} ${params.get('last_name') || ''}`.trim();
             document.getElementById('business').textContent = 
-                params.get('business');
+                params.get('business') || 'N/A';
             document.getElementById('email').textContent = 
-                params.get('email');
+                params.get('email') || 'N/A';
             document.getElementById('membershipLevel').textContent = 
-                params.get('membership_level').toUpperCase();
-                document.addEventListener('DOMContentLoaded', function() {
-    const params = new URLSearchParams(window.location.search);
-
-    const timestamp = params.get('timestamp');
-    const date = timestamp ? new Date(timestamp) : null;
-
-    document.getElementById('fullName').textContent = 
-        `${params.get('first_name') || ''} ${params.get('last_name') || ''}`;
-    document.getElementById('business').textContent = 
-        params.get('business') || 'N/A';
-    document.getElementById('email').textContent = 
-        params.get('email') || 'N/A';
-    document.getElementById('membershipLevel').textContent = 
-        (params.get('membership_level') || 'N/A').toUpperCase();
-    document.getElementById('timestamp').textContent = 
-        date && !isNaN(date.getTime()) ? date.toLocaleString() : 'Invalid Date';
-});
+                (params.get('membership_level') || 'N/A').toUpperCase();
+            document.getElementById('timestamp').textContent = 
+                date && !isNaN(date.getTime()) ? date.toLocaleString() : 'Invalid Date';
         });
     </script>
 </body>
