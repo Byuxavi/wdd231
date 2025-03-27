@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavi Chamber of Commerce</title>
+    <meta name="author" content="Javier Manosalva">
+    <meta name="description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+    <meta property="og:title" content="Member Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://byuxavi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://github.com/Byuxavi/wdd231/blob/main/chamber/images/commerce.jpg">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/commerce.jpg">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo">
+                <img src="images/commerce.jpg" alt="Chamber Logo">
+                <h1>Chamber of Commerce</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="join-highlight">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+            <h1 class="title fade-in">Join Our Chamber</h1>
+            <p class="subtitle slide-up">Connect, grow, and thrive with our business community</p>
+
+
+        <div class="content-wrapper">
+            <form id="membershipForm" action="thankyou.html" method="get" class="membership-form slide-in-left">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="first_name" required autocomplete="given-name" title="Enter your first name"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="last_name" required autocomplete="family-name" title="Enter your last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="orgTitle">Title in Organization</label>
+                    <input type="text" id="orgTitle" name="org_title" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title" title="Enter at least 7 characters, only letters, hyphens, and spaces">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com" autocomplete="email" title="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Phone *</label>
+                    <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="business">Business Name *</label>
+                    <input type="text" id="business" name="business" required autocomplete="organization" title="Enter your Business Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="membershipLevel">Membership Level *</label>
+                    <select id="membershipLevel" name="membership_level" required title="Select your desired membership level">
+                        <option value="" disabled selected>Select a Membership</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="businessDesc">Business Description</label>
+                    <textarea id="businessDesc" name="business_desc" rows="4" title="Provide a brief description of your business"></textarea>
+                </div>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit" class="submit-btn">Join Now</button>
+            </form>
+
+            <div class="membership-cards slide-in-right">
+                <div class="card" data-level="np">
+                    <h3>NP Membership</h3>
+                    <p class="price">Free</p>
+                    <button class="view-benefits-btn" onclick="document.getElementById('np-modal').showModal()">View Benefits</button>
+                </div>
+            
+                <div class="card" data-level="bronze">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">$99/year</p>
+                    <button class="view-benefits-btn" onclick="document.getElementById('bronze-modal').showModal()">View Benefits</button>
+                </div>
+            
+                <div class="card" data-level="silver">
+                    <h3>Silver Membership</h3>
+                    <p class="price">$199/year</p>
+                    <button class="view-benefits-btn" onclick="document.getElementById('silver-modal').showModal()">View Benefits</button>
+                </div>
+            
+                <div class="card" data-level="gold">
+                    <h3>Gold Membership</h3>
+                    <p class="price">$399/year</p>
+                    <button class="view-benefits-btn" onclick="document.getElementById('gold-modal').showModal()">View Benefits</button>
+                </div>
+            </div>
+            
+            <!-- Modales para los beneficios -->
+            <dialog id="np-modal">
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Networking opportunities</li>
+                    <li>Access to newsletters</li>
+                </ul>
+                <button onclick="document.getElementById('np-modal').close()">Close</button>
+            </dialog>
+            
+            <dialog id="bronze-modal">
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Discounts on events</li>
+                    <li>Marketing opportunities</li>
+                </ul>
+                <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+            </dialog>
+            
+            <dialog id="silver-modal">
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Priority event invitations</li>
+                    <li>Business listing</li>
+                </ul>
+                <button onclick="document.getElementById('silver-modal').close()">Close</button>
+            </dialog>
+            
+            <dialog id="gold-modal">
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Exclusive VIP events</li>
+                    <li>Personalized business support</li>
+                </ul>
+                <button onclick="document.getElementById('gold-modal').close()">Close</button>
+            </dialog>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Xavi Chamber of Commerce</h3>
+                <p>10 Rue De La Paix, Bucaramanga, Colombia 999</p>
+                <p>Email: <a href="mailto:info@xavi.org">info@xavi.org</a></p>
+                <p>Phone: <a href="tel:+2235552300">(223) 555-2300</a></p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://youtube.com"><img src="images/youtube-svgrepo-com.svg" alt="YouTube"></a>
+                <a href="https://twitter.com"><img src="images/threads-logo.svg" alt="Twitter"></a>
+                <a href="https://linkedin.com"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-extra">
+                <p>WDD231 Class Project</p>
+                <p>Javier Manosalva</p>
+                <p>&copy; 2024 Xavi Chamber of Commerce</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="membership-data.js"></script>
+    <script src="/chamber/scripts/script.js"></script>
+</body>
+</html>
