@@ -102,8 +102,23 @@
                 params.get('email');
             document.getElementById('membershipLevel').textContent = 
                 params.get('membership_level').toUpperCase();
-            document.getElementById('timestamp').textContent = 
-                new Date(params.get('timestamp')).toLocaleString();
+                document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+
+    const timestamp = params.get('timestamp');
+    const date = timestamp ? new Date(timestamp) : null;
+
+    document.getElementById('fullName').textContent = 
+        `${params.get('first_name') || ''} ${params.get('last_name') || ''}`;
+    document.getElementById('business').textContent = 
+        params.get('business') || 'N/A';
+    document.getElementById('email').textContent = 
+        params.get('email') || 'N/A';
+    document.getElementById('membershipLevel').textContent = 
+        (params.get('membership_level') || 'N/A').toUpperCase();
+    document.getElementById('timestamp').textContent = 
+        date && !isNaN(date.getTime()) ? date.toLocaleString() : 'Invalid Date';
+});
         });
     </script>
 </body>
