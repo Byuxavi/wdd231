@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", async () => { 
     const discoverContainer = document.getElementById("discover-cards");
 
-    // Menú Toggle
+    // Menu Toggle
     const menuButton = document.querySelector(".hamburger-menu");
     const navMenu = document.querySelector("#main-nav");
 
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     });
 
-    
+    // Footer: Last updated date
     const lastUpdated = document.getElementById("last-modified");
     if (lastUpdated) lastUpdated.textContent = document.lastModified;
 
-    
+    // Handling last visit message
     const lastVisit = localStorage.getItem("lastVisit");
     const message = document.getElementById("visit-message");
 
@@ -30,52 +30,57 @@ document.addEventListener("DOMContentLoaded", async () => {
         const now = new Date();
         const daysDiff = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
 
-        message.textContent = daysDiff === 0 
-            ? "¡Welcome to our site! Explore and enjoy." 
-            : `Your last visit was ${daysDiff} ago.`;
+        // Display message based on the time difference between visits
+        if (daysDiff === 0) {
+            message.textContent = "Back so soon! Awesome!";
+        } else if (daysDiff === 1) {
+            message.textContent = `You last visited ${daysDiff} day ago.`;
+        } else {
+            message.textContent = `You last visited ${daysDiff} days ago.`;
+        }
     } else {
-        message.textContent = "¡Welcome to our site! Explore and enjoy.";
+        message.textContent = "Welcome! Let us know if you have any questions.";
     }
 
-    // Actualizar la fecha de última visita
+    // Update the last visit date in localStorage
     localStorage.setItem("lastVisit", new Date().toISOString());
 
-    // Cargar datos desde el JSON
+    // Fetch data from the JSON file
     try {
         const response = await fetch("data/discover.json");
-        if (!response.ok) throw new Error("Error al cargar el JSON.");
+        if (!response.ok) throw new Error("Error loading the JSON file.");
 
         const data = await response.json();
         if (!data.destinations || data.destinations.length === 0) {
-            throw new Error("El archivo JSON está vacío o mal estructurado.");
+            throw new Error("The JSON file is empty or malformed.");
         }
 
         displayDiscoverItems(data.destinations);
     } catch (error) {
-        console.error("Error cargando los puntos de interés:", error);
-        discoverContainer.innerHTML = `<p class="error-message">No se pudieron cargar los destinos. Intenta más tarde.</p>`;
+        console.error("Error loading the destinations:", error);
+        discoverContainer.innerHTML = `<p class="error-message">Failed to load the destinations. Please try again later.</p>`;
     }
 
-    // Función para mostrar las tarjetas
+    // Function to display the destination cards
     function displayDiscoverItems(destinations) {
-        discoverContainer.innerHTML = ""; // Limpiar contenido previo
+        discoverContainer.innerHTML = ""; // Clear previous content
 
         destinations.forEach(poi => {
             const card = document.createElement("div");
             card.classList.add("discover-card");
 
-            // Verificar si hay imagen, si no usar una por defecto
+            // Check if there's an image, if not use a default one
             const imageUrl = poi.photoUrl ? poi.photoUrl : "images/default-placeholder.jpg";
 
-            // Crear la tarjeta con Lazy Loading
+            // Create the card with Lazy Loading
             card.innerHTML = `
-                <img src="${imageUrl}" alt="${poi.name || "Sin nombre"}" class="discover-image" loading="lazy">
+                <img src="${imageUrl}" alt="${poi.name || "Unnamed"}" class="discover-image" loading="lazy">
                 <div class="discover-info">
-                    <h3>${poi.name || "Nombre desconocido"}</h3>
-                    <p>📍 ${poi.location || "Ubicación desconocida"} - ${poi.address || "Dirección no disponible"}</p>
-                    <p>${poi.description || "Sin descripción disponible."}</p>
+                    <h3>${poi.name || "Unknown Name"}</h3>
+                    <p>📍 ${poi.location || "Unknown Location"} - ${poi.address || "Address unavailable"}</p>
+                    <p>${poi.description || "No description available."}</p>
                     <p class="cost-info">
-                        ${poi.cost?.amount ?? "Desconocido"} ${poi.cost?.currency ?? ""} - ${poi.cost?.notes ?? ""}
+                        ${poi.cost?.amount ?? "Unknown"} ${poi.cost?.currency ?? ""} - ${poi.cost?.notes ?? ""}
                     </p>
                     <a href="more-info.html?id=${poi.id}" class="learn-more">Learn More</a>
                 </div>
@@ -85,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
-    // Añadir Lazy Loading en los íconos de redes sociales
+    // Add Lazy Loading to social media icons
     document.querySelectorAll('.footer-social img').forEach(icon => {
         icon.setAttribute('loading', 'lazy');
     });
