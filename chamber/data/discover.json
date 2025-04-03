@@ -1,0 +1,115 @@
+{
+   "destinations": [
+   
+   {
+      "name": "Machu Picchu",
+      "location": "Cusco, Peru",
+      "address": "Machu Picchu Archaeological Site, 08680, Peru",
+      "cost": {
+         "amount": 152,
+         "currency": "PEN",
+         "notes": "Foreign tourist ticket for the citadel"
+      },
+      "description": "Ancient 15th-century Inca city located in the Peruvian Andes at 2,430 meters above sea level, known for its impressive ruins and panoramic views.",
+      "photoUrl": "https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   },
+   {
+      "name": "Great Wall of China",
+      "location": "Beijing, China",
+      "address": "Badaling Section, Yanqing District, Beijing, China",
+      "cost": {
+         "amount": 40,
+         "currency": "CNY",
+         "notes": "Basic adult entry in the off-season"
+      },
+      "description": "Ancient fortification of over 21,000 km built to protect the Chinese empire from invasions, considered one of the seven wonders of the modern world.",
+      "photoUrl": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   },
+   {
+      "name": "Santorini",
+      "location": "Cyclades Islands, Greece",
+      "address": "Oia, Santorini 847 00, Greece",
+      "cost": {
+         "amount": 0,
+         "currency": "EUR",
+         "notes": "Free access to the village, accommodation costs starting from 100 EUR per night"
+      },
+      "description": "Volcanic island with spectacular views of the Aegean Sea, famous for its white houses with blue domes, black sand beaches, and romantic sunsets.",
+      "photoUrl": "https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   },
+   {
+      "name": "Grand Canyon",
+      "location": "Arizona, United States",
+      "address": "Grand Canyon National Park, AZ 86023, United States",
+      "cost": {
+         "amount": 35,
+         "currency": "USD",
+         "notes": "Vehicle pass valid for 7 days"
+      },
+      "description": "Spectacular geological formation carved by the Colorado River over millions of years, with depths of up to 1,800 meters and 446 km in length.",
+      "photoUrl": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   },
+   {
+      "name": "Taj Mahal",
+      "location": "Agra, India",
+      "address": "Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001, India",
+      "cost": {
+         "amount": 1100,
+         "currency": "INR",
+         "notes": "Entry for foreign tourists"
+      },
+      "description": "Majestic white marble mausoleum built by Emperor Shah Jahan in memory of his beloved wife, considered one of the masterpieces of world architecture.",
+      "photoUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+   },
+
+   {
+      "name": "Galápagos Islands",
+      "location": "Ecuador",
+      "address": "Galápagos Islands, Ecuador",
+      "cost": {
+         "amount": 100,
+         "currency": "USD",
+         "notes": "Entry card for the National Park for foreigners + tour costs from 200 USD/day"
+      },
+      "description": "Volcanic archipelago with incredible biodiversity that inspired Darwin's theory of evolution, home to unique species like giant tortoises, marine iguanas, and finches.",
+      "photoUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   },
+   {
+      "name": "Kyoto",
+      "location": "Japan",
+      "address": "Kyoto, Kyoto Prefecture, Japan",
+      "cost": {
+         "amount": 1000,
+         "currency": "JPY",
+         "notes": "Average per temple/garden, prices vary"
+      },
+      "description": "Ancient imperial capital of Japan with over 1,600 Buddhist temples, 400 Shinto shrines, Zen gardens, and cultural traditions like the tea ceremony and geishas.",
+      "photoUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   },
+   
+   {
+      "name": "Venice",
+      "location": "Italy",
+      "address": "Venezia, 30100, Italy",
+      "cost": {
+         "amount": 5,
+         "currency": "EUR",
+         "notes": "Daily tourist tax + gondola ride from 80 EUR for 30 minutes"
+      },
+      "description": "City built on 118 small islands separated by canals and connected by over 400 bridges, famous for its Gothic architecture, St. Mark's Square, and traditional gondolas.",
+      "photoUrl": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1183&q=80"
+   },
+   {
+      "name": "Aurora Borealis",
+      "location": "Tromsø, Norway",
+      "address": "Tromsø, 9008, Norway",
+      "cost": {
+         "amount": 1500,
+         "currency": "NOK",
+         "notes": "Guided tour to see the aurora (accommodation not included)"
+      },
+      "description": "Natural light show dancing in the polar sky caused by charged solar particles colliding with Earth's atmosphere, creating stunning green and purple light curtains.",
+      "photoUrl": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+   }
+   ]
+}

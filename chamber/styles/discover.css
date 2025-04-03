@@ -1,0 +1,317 @@
+/* Base Styles */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #ff6600;
+    --accent-color: #ffd700;
+    --text-color: #333;
+    --light-bg: #f4f4f4;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+}
+
+.hero {
+    background-color: var(--light-bg);
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Discover Section Styles */
+.discover-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.visitor-info {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Discover Cards Grid */
+#discover-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Discover Card Styles */
+.discover-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.discover-card img {
+    width: 100%;
+    height: 200px; /* Establece una altura uniforme */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Discover Info */
+.discover-info {
+    padding: 15px;
+}
+
+.discover-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.discover-info p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.cost-info {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.footer-info,
+.footer-social,
+.footer-extra {
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(50%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .discover-wrapper {
+        flex-direction: column;
+    }
+}
+#discover-cards {
+    display: grid;
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+}
+
+@media (min-width: 768px) {
+    #discover-cards {
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4";
+    }
+}
+
+@media (min-width: 1024px) {
+    #discover-cards {
+        grid-template-areas: 
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+    }
+}
+@media (min-width: 768px) {
+    .discover-card img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+/* Estilos del Menú */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#main-nav ul li {
+    padding: 10px 0;
+}
+
+#main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+    #main-nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 20px;
+    }
+
+    
+    .hamburger-menu {
+        display: block;
+        color: white;
+    }
+
+
+    #main-nav.show ul {
+        display: flex;
+    }
+}

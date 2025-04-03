@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavi Chamber of Commerce</title>
+    <meta name="author" content="Javier Manosalva">
+    <meta name="description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+    <meta property="og:title" content="Member Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://byuxavi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://github.com/Byuxavi/wdd231/blob/main/chamber/images/commerce.jpg">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:description" content="Explore the Chamber of Commerce Member Directory and discover various local businesses.">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/chamber/images/commerce.jpg" alt="Chamber of Commerce Logo" loading="lazy">
+                    <h1>View Chamber of Commerce</h1>
+                </div>
+                <div class="hamburger-menu">&#9776;</div>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html" class="active">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Discover Mountain View</h2>
+                <p>Explore the natural beauty, vibrant culture, and thriving business community of Mountain View. From stunning landscapes to innovative tech hubs, our area offers something for everyone.</p>
+            </section>
+
+            <div class="discover-wrapper">
+                <section class="visitor-info">
+                    <h3>Welcome Back!</h3>
+                    <p id="visit-message">Welcome! Let us know if you have any questions.</p>
+                </section>
+
+                <section id="discover-cards">
+                    <!-- Cards will be populated from JSON data -->
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Xavi Chamber of Commerce</h3>
+                <p>10 Rue De La Paix, Bucaramanga, Colombia 999</p>
+                <p>Email: <a href="mailto:info@xavi.org">info@xavi.org</a></p>
+                <p>Phone: <a href="tel:+2235552300">(223) 555-2300</a></p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://youtube.com">
+                    <img src="images/youtube-svgrepo-com.svg" alt="YouTube" loading="lazy">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/threads-logo.svg" alt="Twitter" loading="lazy">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn" loading="lazy">
+                </a>
+            </div>
+
+            <div class="footer-extra">
+                <p>WDD231 Class Project</p>
+                <p>Javier Manosalva</p>
+                <p>&copy; 2024 Xavi Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
