@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Container & Grid Layout
+   ========================================================================== */
+
+   .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* Standard Grids */
+  .services-grid,
+  .skills-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .projects-grid.compact {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .faq-container,
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Two Column Layouts */
+  .about-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-image {
+    flex: 1;
+    position: relative;
+  }
+  
+  .project-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  /* Los estilos responsivos se definen en breakpoints.css */

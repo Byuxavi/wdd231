@@ -1,0 +1,183 @@
+{
+  "projects": [
+    {
+      "id": "proj01",
+      "name": "Apple",
+      "description": "Apple's official website, awarded for its minimalist design and exceptional user experience.",
+      "image": "https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.apple.com",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "GSAP"],
+      "features": ["Minimalist Design", "Fluid Animations", "Mobile Optimization", "Accessibility"],
+      "awards": ["Awwwards - Site of the Day", "CSS Design Awards"],
+      "category": "Corporate"
+    },
+    {
+      "id": "proj02",
+      "name": "Airbnb",
+      "description": "Vacation rental platform with a clean and fluid design that makes it easy to search and book accommodations.",
+      "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.airbnb.com",
+      "technologies": ["React", "Node.js", "CSS3", "GraphQL"],
+      "features": ["Intuitive Filters", "Interactive Maps", "Simplified Booking Experience", "Responsive Design"],
+      "awards": ["Webby Awards", "UX Design Awards"],
+      "category": "Platform"
+    },
+    {
+      "id": "proj03",
+      "name": "Spotify",
+      "description": "Music streaming service with an intuitive interface and personalization based on user preferences.",
+      "image": "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.spotify.com",
+      "technologies": ["Angular", "Node.js", "Express", "WebGL"],
+      "features": ["Personalized Recommendations", "Smooth Playback", "Dark Mode", "Social Integration"],
+      "awards": ["iF Design Award", "Best UI Design"],
+      "category": "Entertainment"
+    },
+    {
+      "id": "proj04",
+      "name": "Stripe",
+      "description": "Payment platform with exceptional technical design and interactive documentation for developers.",
+      "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=600&h=400&fit=crop",
+      "url": "https://stripe.com",
+      "technologies": ["React", "Ruby on Rails", "CSS3", "WebGL"],
+      "features": ["Interactive Documentation", "Fluid Animations", "Intuitive Dashboards", "High Security"],
+      "awards": ["Awwwards - Site of the Month", "CSS Design Awards - Best UI"],
+      "category": "Fintech"
+    },
+    {
+      "id": "proj05",
+      "name": "Awwwards",
+      "description": "Platform that recognizes the talent and effort of the best web designers and developers.",
+      "image": "https://images.unsplash.com/photo-1472437774355-71ab6752b434?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.awwwards.com",
+      "technologies": ["Vue.js", "PHP", "GSAP", "Three.js"],
+      "features": ["Inspiration Gallery", "Voting System", "Specialized Categories", "Active Community"],
+      "awards": ["FWA Site of the Day", "Communication Arts"],
+      "category": "Community"
+    },
+    {
+      "id": "proj07",
+      "name": "Behance",
+      "description": "Adobe platform for showcasing and discovering creative work with a focus on design portfolios.",
+      "image": "https://images.unsplash.com/photo-1618788372246-79faff0c3742?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.behance.net",
+      "technologies": ["Angular", "Node.js", "MongoDB", "CloudFlare"],
+      "features": ["Creative Portfolios", "Collaborative Projects", "Detailed Statistics", "Job Opportunities"],
+      "awards": ["FWA - Favorite Website Awards", "Best Portfolio Platform"],
+      "category": "Creative Platform"
+    },
+    {
+      "id": "proj08",
+      "name": "Notion",
+      "description": "All-in-one application for notes, project management, and team collaboration with a minimalist interface.",
+      "image": "https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.notion.so",
+      "technologies": ["React", "GraphQL", "ElasticSearch", "AWS"],
+      "features": ["Customizable Blocks", "Real-time Collaboration", "API Integration", "Dark/Light Theme"],
+      "awards": ["Product Hunt - Product of the Year", "Best Productivity Tool"],
+      "category": "Productivity"
+    },
+    {
+      "id": "proj09",
+      "name": "Netflix",
+      "description": "Streaming service with an intuitive interface and recommendation system based on user preferences.",
+      "image": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.netflix.com",
+      "technologies": ["React", "Node.js", "Java", "AWS"],
+      "features": ["Personalized Interface", "Auto-play", "Multiple Profiles", "Original Content"],
+      "awards": ["Emmy Technology Award", "UX Design Excellence"],
+      "category": "Entertainment"
+    },
+    {
+      "id": "proj10",
+      "name": "Pinterest",
+      "description": "Visual social network for discovering and saving creative ideas with an infinite grid design.",
+      "image": "https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.pinterest.com",
+      "technologies": ["React", "Django", "MySQL", "CDN"],
+      "features": ["Infinite Scroll", "Custom Boards", "Visual Search", "Recommendations"],
+      "awards": ["Webby Awards", "Best Visual Design"],
+      "category": "Social Network"
+    },
+    {
+      "id": "proj11",
+      "name": "Slack",
+      "description": "Business communication platform with a friendly interface and multiple integrations for teams.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&h=400&fit=crop",
+      "url": "https://slack.com",
+      "technologies": ["React", "Electron", "WebSockets", "Redux"],
+      "features": ["Real-time Messaging", "Organized Channels", "API Integrations", "Advanced Search"],
+      "awards": ["Inc Design Awards", "Best Business Application"],
+      "category": "Productivity"
+    },
+    {
+      "id": "proj12",
+      "name": "Figma",
+      "description": "Web-based collaborative design tool with advanced capabilities for UI/UX teams.",
+      "image": "https://images.unsplash.com/photo-1621111848501-8d3634f82336?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.figma.com",
+      "technologies": ["WebGL", "TypeScript", "WebAssembly", "Canvas API"],
+      "features": ["Real-time Collaboration", "Reusable Components", "Interactive Prototyping", "Custom Plugins"],
+      "awards": ["Product Hunt - Design Tool of the Year", "Best Collaboration Tool"],
+      "category": "Design"
+    },
+    {
+      "id": "proj13",
+      "name": "Medium",
+      "description": "Publishing platform with a focus on readability and reading experience for quality content.",
+      "image": "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=600&h=400&fit=crop",
+      "url": "https://medium.com",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Redis"],
+      "features": ["Excellent Typography", "Reading Mode", "Affiliate Program", "Detailed Statistics"],
+      "awards": ["Webby Awards - Best Writing Experience", "Content Platform of the Year"],
+      "category": "Content"
+    },
+    {
+      "id": "proj14",
+      "name": "GitHub",
+      "description": "Software development platform with version control and collaboration on open-source projects.",
+      "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&h=400&fit=crop",
+      "url": "https://github.com",
+      "technologies": ["Ruby on Rails", "React", "Go", "ElasticSearch"],
+      "features": ["Version Control", "Pull Requests", "GitHub Actions", "GitHub Pages"],
+      "awards": ["InfoWorld Technology of the Year", "Best Developer Platform"],
+      "category": "Development"
+    },
+    {
+      "id": "proj15",
+      "name": "Mailchimp",
+      "description": "Email marketing platform with intuitive interfaces and detailed campaign analysis.",
+      "image": "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?q=80&w=600&h=400&fit=crop",
+      "url": "https://mailchimp.com",
+      "technologies": ["React", "PHP", "PostgreSQL", "Redis"],
+      "features": ["Email Builder", "Automations", "Advanced Segmentation", "Detailed Analytics"],
+      "awards": ["Webby Awards - Marketing Tool", "Best Email Platform"],
+      "category": "Marketing"
+    },
+    {
+      "id": "proj16",
+      "name": "Dropbox",
+      "description": "Cloud storage service with clean design and simplified user experience.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&h=400&fit=crop",
+      "url": "https://www.dropbox.com",
+      "technologies": ["React", "Python", "Go", "MySQL"],
+      "features": ["Automatic Synchronization", "File Sharing", "Version Control", "Collaborative Paper"],
+      "awards": ["UX Design Awards", "Best Cloud Service"],
+      "category": "Productivity"
+    }
+  ],
+  "categories": [
+    "Corporate", 
+    "Platform", 
+    "Entertainment", 
+    "Fintech", 
+    "Community", 
+    "Creative Platform", 
+    "Productivity", 
+    "Social Network", 
+    "Design", 
+    "Content", 
+    "Development", 
+    "Marketing"
+  ]
+}

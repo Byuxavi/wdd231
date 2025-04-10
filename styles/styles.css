@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Main Stylesheet - Xavi Web Services
+   ========================================================================== */
+
+/* Import base styles */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+
+/* Import layout styles */
+@import 'layout/header.css';
+@import 'layout/footer.css';
+@import 'layout/grid.css';
+
+/* Import component styles */
+@import 'components/buttons.css';
+@import 'components/forms.css';
+@import 'components/modals.css';
+
+/* Import page-specific styles */
+@import 'pages/home.css';
+@import 'pages/catalog.css';
+@import 'pages/contact.css';
+
+/* Import responsive styles */
+@import 'responsive/breakpoints.css';

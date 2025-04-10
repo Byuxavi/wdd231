@@ -1,0 +1,224 @@
+<!--contact.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Xavi Web Services</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Meta tags -->
+  <meta name="description" content="Get in touch with Xavi for web design and development services. Contact for project inquiries or collaborations.">
+  <meta property="og:title" content="Contact | Xavi Web Services">
+  <meta property="og:description" content="Get in touch for web design and development services.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#4285f4">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Xavi<span class="logo-dot"></span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Let's discuss your project or just say hello</p>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <h2>Send me a message</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <div class="form-feedback"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required>
+              <div class="form-feedback"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry" required></textarea>
+              <div class="form-feedback"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="project-type">Project Type</label>
+              <select id="project-type" name="project-type">
+                <option value="">Select project type</option>
+                <option value="website">Website Design</option>
+                <option value="ecommerce">E-commerce Development</option>
+                <option value="redesign">Website Redesign</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to newsletter for design tips and updates</label>
+            </div>
+            
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability Section -->
+      <div class="timeline">
+        <h3>Project Timeline Expectations</h3>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Small Website / Landing Page</h4>
+              <p>2-3 weeks from concept to launch</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Multi-page Website</h4>
+              <p>3-5 weeks from concept to launch</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>E-commerce Website</h4>
+              <p>5-8 weeks from concept to launch</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Custom Web Application</h4>
+              <p>8+ weeks depending on complexity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-subheading">Common questions about working with me</p>
+      </div>
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary>What information do you need to start a project?</summary>
+          <div class="faq-content">
+            <p>To get started, I'll need information about your business goals, target audience, design preferences, functionality requirements, and any existing brand assets. The more details you can provide, the better I can understand your vision.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How do we communicate during the project?</summary>
+          <div class="faq-content">
+            <p>I maintain regular communication through email, video calls, and project management tools. You'll receive weekly updates on progress, and I'm available to answer questions throughout the project timeline.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer website maintenance after launch?</summary>
+          <div class="faq-content">
+            <p>Yes, I offer ongoing maintenance packages that include security updates, content updates, performance optimization, and technical support. These can be customized based on your specific needs.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What happens if I need changes after the project is complete?</summary>
+          <div class="faq-content">
+            <p>Minor adjustments within the scope of the original project are included in my service. For larger changes or new features, we can discuss additional work at my standard hourly rate or as a new small project.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="success-content">
+        <i class="fas fa-check-circle"></i>
+        <h3>Message Sent Successfully!</h3>
+        <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+        <button class="btn primary-btn modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">Xavi<span class="logo-dot"></span></div>
+          <p>Creating digital experiences that make an impact.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Xavi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Buttons & Interactive Elements
+   ========================================================================== */
+
+   .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 0.9rem;
+  }
+  
+  .primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+  }
+  
+  .secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .outline-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+  }
+  
+  .outline-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  /* View Buttons */
+  .view-options {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .view-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .view-btn:hover, .view-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+  }
+  
+  .page-btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+  }
+  
+  .page-btn:not(:disabled):hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  .page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .page-numbers {
+    font-size: 0.9rem;
+  }
+  
+  /* Tags */
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .tag {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .tag i {
+    color: var(--primary-color);
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags span {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+  
+  .skill-tag {
+    background-color: var(--bg-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+  }

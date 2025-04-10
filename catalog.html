@@ -1,0 +1,216 @@
+<!--catalog.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Xavi Web Services</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="description" content="Discover my portfolio of web development projects and services. Websites, applications, and digital solutions by Xavi." />
+  <meta property="og:title" content="Portfolio | Xavi Web Services" />
+  <meta property="og:description" content="Discover my portfolio of web development projects and digital solutions." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#4285f4" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Xavi<span class="logo-dot"></span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <p>Explore my projects and web development services</p>
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Portfolio</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services</h2>
+        <p class="section-subheading">Solutions tailored for your digital needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Custom websites built with modern technologies, optimized for performance and user experience.</p>
+          <ul class="service-features">
+            <li>Responsive Design</li>
+            <li>SEO Optimization</li>
+            <li>Cross-browser Compatibility</li>
+          </ul>
+          <a href="contact.html" class="btn secondary-btn">Get Started</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Websites that work perfectly on all devices, from smartphones to desktop computers.</p>
+          <ul class="service-features">
+            <li>Mobile-first Approach</li>
+            <li>Adaptive Layouts</li>
+            <li>Touch-friendly Interfaces</li>
+          </ul>
+          <a href="contact.html" class="btn secondary-btn">Get Started</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h3>E-Commerce Solutions</h3>
+          <p>Online stores with seamless shopping experiences, secure payments, and inventory management.</p>
+          <ul class="service-features">
+            <li>Product Catalogs</li>
+            <li>Secure Checkout</li>
+            <li>Order Management</li>
+          </ul>
+          <a href="contact.html" class="btn secondary-btn">Get Started</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Improve your website's visibility in search engines and drive more targeted traffic.</p>
+          <ul class="service-features">
+            <li>Keyword Research</li>
+            <li>On-page Optimization</li>
+            <li>Performance Tuning</li>
+          </ul>
+          <a href="contact.html" class="btn secondary-btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <div class="view-options">
+        <button class="view-btn" data-view="grid" aria-label="Grid view"><i class="fas fa-th"></i></button>
+        <button class="view-btn active" data-view="cards" aria-label="Card view"><i class="fas fa-th-large"></i></button>
+      </div>
+      
+      <div id="projects-container" class="projects-grid">
+        <!-- Project cards will be dynamically populated with JS -->
+        <p class="loading-message">Loading projects...</p>
+      </div>
+      
+      <div class="pagination">
+        <button class="page-btn prev" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+        <div class="page-numbers">
+          <span class="current-page">1</span> / <span class="total-pages">1</span>
+        </div>
+        <button class="page-btn next" disabled>Next <i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <p>Let's discuss how I can help bring your vision to reality.</p>
+      <a href="contact.html" class="btn primary-btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-subheading">Common questions about my services</p>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary>What is your design process?</summary>
+          <div class="faq-content">
+            <p>My design process starts with understanding your needs and goals. Then I create wireframes and mockups for your approval before developing the final website. Throughout the process, I maintain clear communication and welcome your feedback.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How long does it take to complete a website?</summary>
+          <div class="faq-content">
+            <p>Project timelines vary depending on complexity and scope. A simple website might take 2-3 weeks, while more complex projects could take 1-2 months. I'll provide a detailed timeline during our initial consultation.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you provide website maintenance?</summary>
+          <div class="faq-content">
+            <p>Yes, I offer website maintenance services to keep your site updated, secure, and performing well. Maintenance packages can include regular updates, security checks, backups, and content updates.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What information do you need to start a project?</summary>
+          <div class="faq-content">
+            <p>To get started, I'll need information about your business/project, target audience, design preferences, content (text, images), functionality requirements, and any existing branding materials you have.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div id="project-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-body">
+        <!-- Project details will be populated here -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">Xavi<span class="logo-dot"></span></div>
+          <p>Creating digital experiences that make an impact.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Xavi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

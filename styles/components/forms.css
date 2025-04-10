@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Forms & Input Elements
+   ========================================================================== */
+
+   .contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background-color: var(--bg-alt);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .form-group input.error,
+  .form-group textarea.error {
+    border-color: #ff4d4f;
+  }
+  
+  .form-feedback {
+    font-size: 0.8rem;
+    color: #ff4d4f;
+    min-height: 1.2rem;
+  }
+  
+  .required {
+    color: #ff4d4f;
+  }
+  
+  .form-group:last-of-type {
+    grid-column: 1 / -1;
+  }
+  
+  .form-checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .form-checkbox input {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .contact-form button {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+  
+  /* Filter Controls */
+  .filter-controls {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .category-select {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
