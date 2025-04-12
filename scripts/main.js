@@ -4,6 +4,8 @@ import { initMobileMenu } from './modules/mobile-menu.js';
 import { initProjectsGallery } from './modules/projects-gallery.js';
 import { initContactForm } from './modules/contact-form.js';
 import { loadRecentProjects } from './modules/recent-projects.js';
+import { initWeather } from './modules/weather.js';
+
 
 // Inicialización de funcionalidades comunes
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Inicializar menú móvil
   initMobileMenu();
+
+  initWeather();
   
   
   // Cargar proyectos recientes en la página de inicio si estamos en esa página

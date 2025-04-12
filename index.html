@@ -13,6 +13,7 @@
   <meta property="og:description" content="Frontend developer creating elegant digital experiences." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#4285f4" />
+  <link rel="icon" href="images/xavi.jpg">
 </head>
 <body>
   <nav id="navbar">
@@ -81,7 +82,7 @@
           <a href="#skills" class="btn outline-btn">My Skills</a>
         </div>
         <div class="about-image">
-          <img src="images/heroe.jpg" alt="Xavi - Web Designer & Developer" class="profile-image">
+          <img src="images/heroe.jpg" alt="Xavi - Web Designer & Developer" class="profile-image"loading="lazy">
         </div>
       </div>
     </div>
@@ -177,38 +178,46 @@
       <a href="contact.html" class="btn primary-btn">Get in Touch</a>
     </div>
   </section>
-
   <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <div class="logo">Xavi<span class="logo-dot"></span></div>
-          <p>Creating digital experiences that make an impact.</p>
-        </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalog.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <h3>Connect</h3>
-          <div class="social-links">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
+    <div class="footer-horizontal">
+      <div class="footer-block">
+        <div class="logo">Xavi<span class="logo-dot">.</span></div>
+        <p>Creating digital experiences that make an impact.</p>
+      </div>
+  
+      <div class="footer-block">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-block">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Xavi. All rights reserved.</p>
+  
+      <div class="footer-block weather-widget">
+        <h3>Weather</h3>
+        <img id="weather-icon" src="images/SunnyWeather.svg" alt="Weather icon">
+        <p><strong>Temp:</strong> <span id="current-temp">--</span>°C</p>
+        <p><strong>Sky:</strong> <span id="weather-desc">--</span></p>
+        <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+        <div id="forecast-container"></div>
       </div>
     </div>
+  
+    <div class="footer-bottom">
+      <p>© 2024 Xavi. All rights reserved.</p>
+    </div>
   </footer>
-
   <script src="scripts/main.js" type="module"></script>
 </body>
 </html>
